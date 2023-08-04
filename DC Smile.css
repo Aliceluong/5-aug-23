@@ -1,0 +1,209 @@
+/* navigation */
+body{
+    background-color: rgba(255, 153, 0, 0.071);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+/* Home */
+.frontpage{
+    display: flex;
+    gap:50px;
+}
+.DC-bkgn{
+    width: 250px;
+    background: linear-gradient(to right, #d1cccc, #ffffff);
+}
+nav{
+    position: relative;
+    height: 50px;
+    margin-bottom: 100px;
+}
+.navi{
+    padding-left: 15px;  
+    align-self: center;
+    border-radius: 10px;
+    background: linear-gradient(to right, #d1cccc, #ffffff);
+    width: 150px;
+    height: 40px;
+}
+.navi:hover{
+    background-color: rgba(250, 137, 44, 0.863);
+}
+.booking-btn1{
+    height:40px;
+    border: none;
+    border-radius: 10px;
+    align-self: center;
+    background: linear-gradient(to right, #d1cccc, #ffffff);
+    font-size: 18px;
+
+}
+/* dropdown */
+.dropdown_services{
+    display: none;
+    position: absolute;
+    background-color: #ec772fb9;
+    z-index: 1;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 10px;
+}
+.dropdown-content{
+    padding: 12px 16px;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+}
+.general_dentistry, .cosmestic_dentistry{
+    display: flex;
+    flex-direction: column;
+} 
+#services:hover .dropdown-services {
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+}
+/* about us */
+.introduction{
+    text-align: center;
+    width: 1000px;
+    margin-left: 100px;
+}
+.welcome-section{
+    display: flex;
+    align-items: center;
+}
+.dentist-introduction{
+    text-align: justify;
+}
+.side-pic{
+    width: 300px;
+    height: 450px;
+    position: relative;
+    padding-left: 50px;
+}
+/* our-services */
+.our-service{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+.GD_list>li{
+    list-style: none;
+    padding-bottom: 5px;
+}
+.CD_list{
+    padding: 0;
+}
+.CD_list>li{
+    list-style: none;
+    padding-bottom: 5px;
+}
+.gallery>p{
+    margin: 0;
+}
+/* insurance and form  */
+.page3{
+    display: flex;
+    flex-direction: row;
+}
+.insurance{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+/* insurance - logo */
+.insurance-logo{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* carousel - form */
+.carousel-form{
+    display:flex;
+}
+/* carousel */
+.d-block w-100{
+    width: 200px;
+}
+/* form */
+.field-form{
+    width: 300px;
+}
+.enquiry-form{
+    width: 150px;
+}
+.box-concern{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+}
+/* footer */
+.contact-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    position: relative;
+    gap: 10px 30px;
+    padding: 0;
+    border: solid 1px orange;
+
+}
+.get-in-touch{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+    justify-content: center;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.clinic-hours{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+footer{
+    border: solid 1px black;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    gap: 10px;
+    height: 30px;
+}
+.contact-us>div{
+    display:inline-flex;
+}
+.contact-us>div>img{
+    padding-right: 10px;
+}
+.address{
+    width: 20px;
+    height: 20px;
+}
+.phone{
+    width: 20px;
+    height: 20px;
+}
+.contact-us>div>span{
+    margin:0;
+}
+.FB{
+    width:20px;
+}
+.clinic-hours>div{
+    display: inline-flex;
+}
+.bk-icon{
+    width: 30px;
+
+}
+.SEO{
+    left:50px
+}
