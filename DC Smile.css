@@ -1,13 +1,16 @@
-/* navigation */
+/* navigation */    
 body{
-    background-color: rgba(255, 153, 0, 0.205);
+    background: rgba(63, 63, 62, 0.486);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    object-fit: cover;
+    color: #0c2a48;
 }
 /* Home */
 .frontpage{
     display: flex;
-    gap:50px;
+    gap: 40px;
+    align-items: center;
 }
 .DC-bkgn{
     width: 250px;
@@ -15,37 +18,42 @@ body{
 }
 nav{
     position: relative;
-    height: 50px;
+    height: 200px;
     margin-bottom: 100px;
 }
 .navi{
     padding-left: 15px;  
     align-self: center;
-    border-radius: 10px;
-    background: linear-gradient(to right, rgba(255, 166, 0, 0.53), #ffffff);
-    width: 150px;
-    height: 40px;
+    border-radius: 5px 5px 10px 10px;
+    background: linear-gradient(to right, rgba(255, 166, 0, 0.53), #f8f9fa);
+    width: 180px;
+    height: 60px;
+    object-fit: cover;
+    color: orangered;
 }
 .navi:hover{
     background-color: rgba(250, 137, 44, 0.863);
 }
 .booking-btn1{
-    height:40px;
+    width: 180px;
+    height:60px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px 5px 10px 10px;;
     align-self: center;
-    background: linear-gradient(to right, #d1cccc, #ffffff);
+    background: linear-gradient(to right, rgba(255, 166, 0, 0.53), #f8f9fa);
     font-size: 18px;
-
 }
 /* dropdown */
 .dropdown_services{
     display: none;
     position: absolute;
-    background-color: #ec772fb9;
+    background-color: #fad3bbb9;
     z-index: 1;
     grid-template-columns: repeat(2, 1fr); 
     grid-gap: 10px;
+    left: 300px;
+    top: 90px;
+    border-radius: 5px 10px 5px 10px;
 }
 .dropdown-content{
     padding: 12px 16px;
@@ -53,11 +61,21 @@ nav{
     display: grid;
     grid-template-columns: 1fr;
     gap:10px;
+    position: relative;
+    left:10px;
+    top: 10px;
 }
+
 .general_dentistry, .cosmestic_dentistry{
     display: flex;
     flex-direction: column;
+    color: rgb(239, 91, 42);
 } 
+.content{
+    text-decoration: none;
+    color:orange;
+    font-size: medium;
+}
 #services:hover .dropdown-services {
     display: grid;
     grid-template-columns: 1fr,1fr;
@@ -136,15 +154,19 @@ nav{
 }
 /* carousel */
 .carousel-item>img{
-    max-width:350px;
-    max-height: 350px;
+    height: 100%;
+    object-fit: cover;
 }
 /* form */
 .field-form{
     width: 300px;
 }
 .enquiry-form{
-    width: 150px;
+    width: 400px;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #959595;
+    border-top-width: 0;
+    margin: 0;
 }
 .box-concern{
     display: grid;
