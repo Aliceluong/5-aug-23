@@ -1,6 +1,6 @@
 /* navigation */
 body{
-    background-color: rgba(255, 153, 0, 0.071);
+    background-color: rgba(255, 153, 0, 0.205);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
@@ -11,7 +11,7 @@ body{
 }
 .DC-bkgn{
     width: 250px;
-    background: linear-gradient(to right, #d1cccc, #ffffff);
+    background: linear-gradient(to right, rgba(255, 166, 0, 0.53), #ffffff);
 }
 nav{
     position: relative;
@@ -22,7 +22,7 @@ nav{
     padding-left: 15px;  
     align-self: center;
     border-radius: 10px;
-    background: linear-gradient(to right, #d1cccc, #ffffff);
+    background: linear-gradient(to right, rgba(255, 166, 0, 0.53), #ffffff);
     width: 150px;
     height: 40px;
 }
@@ -82,6 +82,11 @@ nav{
     padding-left: 50px;
 }
 /* our-services */
+.service-intro{
+    text-align: center;
+    width: 1000px;
+    margin-left: 100px;
+}
 .our-service{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -119,12 +124,20 @@ nav{
     border-radius: 10px;
 }
 /* carousel - form */
+.container{
+    margin-left: 0;
+    margin-right: 0;
+}
+.row{
+    max-height: fit-content;
+}
 .carousel-form{
     display:flex;
 }
 /* carousel */
-.d-block w-100{
-    width: 200px;
+.carousel-item>img{
+    max-width:350px;
+    max-height: 350px;
 }
 /* form */
 .field-form{
@@ -137,7 +150,6 @@ nav{
     display: grid;
     flex-direction: column;
     justify-content: center;
-    gap:5px;
 }
 /* footer */
 .contact-footer{
@@ -170,12 +182,13 @@ nav{
     justify-content: center;
 }
 footer{
-    border: solid 1px black;
+    border: solid 1px ;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 0px;
     gap: 10px;
     height: 30px;
+    font-size: bold;
 }
 .contact-us>div{
     display:inline-flex;
