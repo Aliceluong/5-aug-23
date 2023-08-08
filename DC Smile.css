@@ -131,15 +131,35 @@ nav{
     margin-left:100px;
     margin-right: 0;
 }
-.our-service>.general_dentistry2>img{
-    width: 50px;
-    left:100px;
-    position: relative;
+.our-service>.general_dentistry2{
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: -5px;
+    line-height: 40px;
 }
-.our-service>.cosmestic_dentistry2>img{
-    width: 50px;
-    left:100px;
-    position: relative;
+.dental-care{
+    width: 70px;
+    left:200px;
+    position: absolute;
+    z-index: 2;
+    object-fit: cover;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.implant{
+    width: 70px;
+    left:500px;
+    position: absolute;
+    z-index: 2;
+    object-fit: cover;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.our-service>.cosmestic_dentistry2{
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: -5px;
+    line-height: 40px;
 }
 .GD_list>li{
     list-style: none;
@@ -152,7 +172,13 @@ nav{
     list-style: none;
     padding-bottom: 5px;
 }
-.gallery>p{
+.insurance-box{
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: -5px;
+    line-height: 40px;
+}
+.insurance-box>p{
     margin: 0;
 }
 /* insurance and form  */
