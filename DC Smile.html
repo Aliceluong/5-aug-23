@@ -170,28 +170,35 @@
                     <form class="enquiry-form">
                         <fieldset class="field-form">
                             <legend>Contact Us</legend>
-                            <label for="">First Name</label>
-                            <input id="firstname" class="value-type"type="text"><br>
-                            <label for="">Last Name</label>
-                            <input id="lastname"class="value-type"type="text"><br>
-                            <label for="email">Email</label>
-                            <input class="value-type"type="email" name="" id="email"><br>
-                            <label for="">Phone</label>
-                            <input class="value-type"type="number" name="s" id="number"><br>
-                        </fieldset>
-                        <fieldset>
-                            <label for="">What treatment are you interested in?</label>
-                            <select name="" id="">
-                                <option value="">General Dental</option>
-                                <option value="">Teeth Removal</option>
-                                <option value="">Gum issues</option>
+                            <div>
+                                <label for="">First Name</label>
+                                <input id="firstname" class="value-type"type="text"
+                            </div>
+                            <div>
+                                <label for="">Last Name</label>
+                                <input id="lastname"class="value-type"type="text">
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input class="value-type"type="email" name="" id="email">
+                            </div>
+                            <div>
+                                <label for="">Phone</label>
+                                <input class="value-type" type="tel" name="" id="">
+                            </div>
+                            <div class="option-part">
+                                <label class="label-concern" for="">What treatment are you interested in?</label>
+                                <select class="sel-ser" name="" id="">
+                                <option value="">General Dentistry</option>
+                                <option value="">Comestic Dentistry</option>
                                 <option value="">Others</option>
                             </select>
-                            <div class="box-concern">
-                                <label for="">Your Concerns</label>
-                                <textarea placeholder="Please Type Here" id="box-concern-textarea" cols="30" rows="10"></textarea>
                             </div>
-                            <button id="submit-btn">Submit</button>
+                            <div class="box-concern">
+                                    <label for="">Your Concerns</label>
+                                    <textarea placeholder="Please Type Here" id="box-concern-textarea" cols="30" rows="10"></textarea>
+                            </div>
+                            <button class="button-1" id="submit-btn">Submit</button>
                         </fieldset>
                     </form>
                 </div>
