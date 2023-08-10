@@ -4,7 +4,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     object-fit: cover;
-    color: #0c2a48;
+    color: #63230e;
+    margin: 0 50px;
 }
 /* Home */
 .frontpage{
@@ -14,7 +15,10 @@ body{
 }
 .DC-bkgn{
     width: 250px;
-    background: linear-gradient(to right, rgba(255, 166, 0, 0.53), #ffffff);
+    background: linear-gradient(to right, #ffb3009e, #ffffff);
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
 .imgbkg>img{
     width: 100%;
@@ -29,17 +33,21 @@ nav{
     margin-bottom: 100px;
 }
 .navi{
-    padding-left: 15px;  
     align-self: center;
-    border-radius: 5px 5px 10px 10px;
-    background: linear-gradient(to right, rgba(255, 166, 0, 0.53), #f8f9fa);
+    border-radius: 5px;
+    background: linear-gradient(to right, #ffb3009e, #ffffff);
     width: 180px;
     height: 60px;
     object-fit: cover;
-    color: orangered;
+    color:#63230e;
+    text-align: center;
+    text-decoration:none;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
 }
 .navi:hover{
-    background-color: rgba(250, 137, 44, 0.863);
+    background-color: rgb(250, 137, 44);
+    
 }
 .booking-btn1{
     width: 180px;
@@ -47,14 +55,19 @@ nav{
     border: none;
     border-radius: 5px 5px 10px 10px;;
     align-self: center;
-    background: linear-gradient(to right, rgba(255, 166, 0, 0.53), #f8f9fa);
+    background: linear-gradient(to right, #ffb3009e, #ffffff);
     font-size: 18px;
+    font-weight: bold;
+    color: #63230e;
+}
+.booking-btn1:hover{
+    background-color: rgb(250, 137, 44);
 }
 /* dropdown */
 .dropdown_services{
     display: none;
     position: absolute;
-    background-color: #fad3bbb9;
+    background-color: #fef7f3e0;
     z-index: 1;
     grid-template-columns: repeat(2, 1fr); 
     grid-gap: 10px;
@@ -76,12 +89,13 @@ nav{
 .general_dentistry, .cosmestic_dentistry{
     display: flex;
     flex-direction: column;
-    color: rgb(239, 91, 42);
+    color: #71301b;
+    font-weight: bold;
 } 
 .content{
     text-decoration: none;
-    color:orange;
-    font-size: medium;
+    color:#441c15bf;
+    font-weight: lighter;
 }
 #services:hover .dropdown-services {
     display: grid;
@@ -90,53 +104,104 @@ nav{
 /* about us */
 .introduction{
     text-align: center;
-    width: 900px;
-    margin-left: 100px;
     margin-top: 220px;
-    color: black;
+    color: #63230e;
+}
+.introduction>h2{
+    font-weight: bold;
 }
 .dentist-introduction{
     text-align: justify;
 }
 .welcome-section{
     display: flex;
+    width: 1200px;
     align-items: center;
-    width: 900px;
-    margin-left: 100px;
     text-align: justify;
 }
 .text-dentist{
     text-align: center;
-    margin-left: 300px;
+    font-weight: bold;
+
 }
 .side-pic{
-    width: 100%;
-    height: 100%;
+    width: 370px;
+    height: 550px;
     object-fit: cover;
     position: relative;
-    padding-left: 20px;
+    left: 10px;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 37%);
+    border-radius: 5px;
 }
 /* our-services */
 .service-intro{
     text-align: center;
-    width: 900px;
-    margin-left: 100px;
-    color: black;
+    color: #63230e;
+}
+.service-intro>h2>a{
     text-decoration: none;
+    color: #63230e;
+    font-weight: bold;
 }
 .our-service{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 900px;
-    margin-left:100px;
-    margin-right: 0;
     gap: 5px;
 }
-.our-service>.general_dentistry2{
+.service1{
+    display: flex;
+    flex-direction: column;
+}
+.general_dentistry2{
+    top: 55px;
     border: 1px solid;
     border-radius: 10px;
-    margin-top: -5px;
-    line-height: 40px;
+    line-height: 35px;
+    height: 320px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 15px;
+    align-items: center;
+    background:#e4dbd726;
+    text-decoration: none;
+}
+.comestic_dentistry2{
+    top: 55px;
+    border: 1px solid;
+    border-radius: 10px;
+    line-height: 35px;
+    height: 320px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 15px;
+    align-items: center;
+    background:#e4dbd726;
+}
+.text-service{
+    text-align: center;
+    text-decoration: none;
+    color: #63230e;
+    top: 20px;
+    font-weight: bold;
+}
+.text-service>a{
+    text-align: center;
+    text-decoration: none;
+    color: #63230e;
+    top: 20px;
+    font-weight: bold;
+}
+.GD_list>li>a{
+    color: #63230e;
+    text-decoration: none;
+}
+.CD_list>li>a{
+    color: #63230e;
+    text-decoration: none;
 }
 .dental-care{
     width: 70px;
@@ -146,21 +211,17 @@ nav{
     object-fit: cover;
     border: 1px solid;
     border-radius: 10px;
+    background: #f0f0f0;
 }
 .implant{
     width: 70px;
-    left:500px;
+    left:600px;
     position: absolute;
     z-index: 2;
     object-fit: cover;
     border: 1px solid;
     border-radius: 10px;
-}
-.our-service>.cosmestic_dentistry2{
-    border: 1px solid;
-    border-radius: 10px;
-    margin-top: -5px;
-    line-height: 40px;
+    background: #f0f0f0;
 }
 .GD_list>li{
     list-style: none;
@@ -174,10 +235,33 @@ nav{
     padding-bottom: 5px;
 }
 .insurance-box{
-    border: 1px solid;
+    /* border: 1px solid;
     border-radius: 10px;
     margin-top: -5px;
-    line-height: 40px;
+    line-height: 40px; */
+    top: 55px;
+    border: 1px solid;
+    border-radius: 10px;
+    line-height: 35px;
+    height: 320px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 15px;
+    align-items: center;
+    background:#e4dbd726;
+}
+.icon-insure{
+    width: 70px;
+    left: 150px;
+    position: absolute;
+    z-index: 2;
+    object-fit: cover;
+    border: 1px solid;
+    border-radius: 10px;
+    top: -55px;
+    background: #f0f0f0;
 }
 .insurance-box>p{
     margin: 0;
@@ -191,33 +275,30 @@ nav{
 }
 /* insurance - logo */
 .insurance-logo{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+    position: relative;
+    top: -20px;
 }
 /* carousel - form */
 .container{
-    width: 1000px;
-    left: 30px;
     position: relative;
-    margin-top: 20px;
+    top: 60px;
+    margin: 0;
+    padding: 0;
 }
 .row{
     max-height: fit-content;
-    width: 950px;
-    margin-right: 0px;
-    left: 10px;
     position: relative;
 }
-
-.col-md-6{
-    left: 100px;
-    border: 1px solid black;
-    border: 10px;
+.carousel-inner{
+    width: 80%;
 }
 legend{
     text-align: center;
+    font-weight: bold;
+    width: 400px;   
 }
 .carousel-form{
     display:flex;
@@ -230,73 +311,76 @@ legend{
 }
 /* form */
 .enquiry-form{
-    line-height: 30px;
+    position: relative;
+    top: 10px;
 }
-field-form {
+fieldset {
     margin: 0;
     padding: 0;
     border: 0;
 }
-fieldset:not(:first-child) {
+  fieldset:not(:first-child) {
     margin-top: 26px;
-  }
+}
 label {
-    position: absolute;
-    left: 500px;
+    left: 600px;
     width: 200px;
 }
-.label-concern{
-    position: absolute;
-    left: 500px;
-    width: 300px;
-    margin: 3px 0 0;
-}
+
 .value-type{
     position: relative;
-    left: 100px;
     width: 307px;
-    height: 50px;
+    height: 35px;
     margin: 3px 0 0;
-
 }
 .option-part{
     margin: 3px 0 5px 5px;
+    display: flex;
+
+}
+.label-concern{
+    left: 580px;
+    width: 200px;
 }
 .sel-ser{
     position: relative;
-    left: 280px;
+    width: 200px;
+    height: 30px;
+    text-align: center
 }
 textarea {
-    height: 150px;
-    width: 307px;
-    left: 100px;
+    height: 120px;
+    width: 308px;
     position: relative;
-    top:30px;
+    left: 205px;
+    top: -20px;
 }
 .box-concern{
-    display: block;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     margin: 5px 0 0;
 }
 .button-1{
     position: relative;
-    left: 10px;
-    top: 25px;
-    width: 100px;
-    height: 27px;
+    width: 150px;
+    height: 30px;
     border-radius: 5px;
     text-align: center;
+    left: 207px;
+    background: linear-gradient(to right, #ffb3009e, #ffffff);
+}
+.button-1:hover{
+    background-color: rgb(250, 137, 44);
 }
 /* footer */
 .contact-footer{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
     position: relative;
-    gap: 10px 30px;
+    gap:30px;
     padding: 0;
     border: solid 1px orange;
-
+    top:70px;
 }
 .get-in-touch{
     display: flex;
@@ -314,23 +398,23 @@ textarea {
 .clinic-hours{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 35px;
     justify-content: center;
 }
-footer{
-    border: solid 1px ;
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-    gap: 10px;
-    height: 30px;
-    font-size: bold;
+.title{
+    text-align: center;
+    font-weight: bold;
+
 }
-.contact-us>div{
-    display:inline-flex;
+.link-a{
+    color: black;
+    text-decoration: none;
 }
 .contact-us>div>img{
     padding-right: 10px;
+    object-fit: cover;
+    width: 40px;
+    height: 30px;
 }
 .address{
     width: 20px;
@@ -346,13 +430,38 @@ footer{
 .FB{
     width:20px;
 }
-.clinic-hours>div{
+.img-sec{
     display: inline-flex;
 }
 .bk-icon{
     width: 30px;
+    height: 30px;
+    object-fit: cover;
 
+}
+footer{
+    border: solid 1px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    gap: 10px;
+    height: 30px;
+    font-size: bold;
 }
 .SEO{
     left:50px
 }
+.btn-booking{
+    background: linear-gradient(to right, #ffb3009e, #ffffff);
+    transition: background-color 0.3s ease-in-out;
+    width: 200px;
+    position: relative;
+    left: 80px;
+    border-radius: 5px;
+}
+.btn-booking:hover {
+    background-color: rgb(250, 137, 44);
+}
+
+

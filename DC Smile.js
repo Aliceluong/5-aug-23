@@ -1,21 +1,35 @@
 // Dropdown
 let services = document.querySelector('#services');
+var dropDownServices = document.querySelector('.dropdown_services');
+var dropdownContent = document.querySelector('#service-content')
+
+var dropdownContents = document.querySelectorAll('#service-content')
+console.log(dropdownContents)
+console.log(dropdownContent)
 
 function dropDown(event){
     event.preventDefault(); 
-    var dropDownServices = document.querySelector('.dropdown_services');
     dropDownServices.style.display = 'grid'; 
     
 }
-    services.addEventListener('mouseover', dropDown); 
-// close the dropdwon content
-    function dropDownClose(event){
-        event.preventDefault();
-        var dropDownServices = document.querySelector('.dropdown_services');
-        dropDownServices.style.display = 'none';
-}
-services.addEventListener('mouseout',dropDownClose)
 
+for (var  i = 0; i < dropdownContents.length; i++) {
+    console.log(dropdownContents[i])
+    dropdownContents[i].addEventListener('mouseover', dropDown); 
+}
+services.addEventListener('mouseover', dropDown); 
+// dropdownContent.addEventListener('mouseover', dropDown); 
+// for (let i = 0; i < dropdownContent.length; i++) {
+//     dropDownContent[i].addEventListener('mouseover', dropDown)
+// }
+// close the dropdwon content
+function dropDownClose(event){
+    event.preventDefault();
+    // var dropDownServices = document.querySelector('.dropdown_services');
+    dropDownServices.style.display = 'none';
+}
+
+dropdownContent.addEventListener('mouseout',dropDownClose)
 // form to be filled 
 let submitButton = document.querySelector('#submit-btn')
 const enquiryForm= document.querySelector('.enquiry-form')

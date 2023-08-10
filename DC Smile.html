@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DC Smile</title>
-    <link rel="stylesheet" href="DC Smile.css">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="DC Smile.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -67,30 +68,38 @@
             <p>We’re all about making your dental experience comfortable and relaxed. We’ll meet your needs and exceed your expectations with service tailored to suit you.</p>
         </div>
         <div class="our-service">
-            <img class="dental-care"src="./Photos/dental-care.png" alt="">
-            <div class="general_dentistry2">
-                <h4><a href="">General Dentistry</a></h4>
-                <ul class="GD_list">
-                    <li><a href="">General adult and childen preventative</a></li>
-                    <li><a href="">Dental Check Ups & Cleaning</a></li>
-                    <li><a href="">Wisdom Teeth Removal</a></li>
-                    <li><a href="">Denture</a></li>
-                    <li><a href="">Braces</a></li>
-                    <li><a href="">Bleeding Gum</a></li>
+            <div class="service1">
+                <img class="dental-care"src="./Photos/dental-care.png" alt="">
+                <div class="general_dentistry2">
+                    <h4 class="text-service"><a href="">General Dentistry</a></h4>
+                    <ul class="GD_list">
+                        <li><a href="">General adult and childen preventative</a></li>
+                        <li><a href="">Dental Check Ups & Cleaning</a></li>
+                        <li><a href="">Wisdom Teeth Removal</a></li>
+                        <li><a href="">Denture</a></li>
+                        <li><a href="">Braces</a></li>
+                        <li><a href="">Bleeding Gum</a></li>
+                    </ul>
+                </div>
             </div>
-            <img class="implant" src="./Photos/implant.png" alt="">
-            <div class="cosmestic_dentistry2">
-                <h4><a href="">Cosmestic Dentistry</a></h4>
-                <ul class="CD_list">
-                    <li><a href="">Teeth Whitening</a></li>
-                    <li><a href="">Crown and bridges</a></li>
-                    <li><a href="">Adult and children mouth guards</a></li>
-                </ul>
+            <div class="service1">
+                <img class="implant" src="./Photos/implant.png" alt="">
+                <div class="comestic_dentistry2">
+                    <h4 class="text-service"><a href="">Cosmestic Dentistry</a></h4>
+                    <ul class="CD_list">
+                        <li><a href="">Teeth Whitening</a></li>
+                        <li><a href="">Crown and bridges</a></li>
+                        <li><a href="">Adult and children mouth guards</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="insurance-box">
-                <h4>Dental insurance welcome</h4>
-                <div class="insurance">
-                    <img class="insurance-logo"src="https://cdn.shopify.com/s/files/1/0262/7205/files/HFP_desktop_2e34ee9a-ec68-4c46-af36-c1a2275a70ef.jpg?v=1519344075" alt="Logos of insurance">
+                <img class="icon-insure" src="./Photos/protect.png" alt="">
+                <div>
+                    <h4 class="text-service">Dental Insurance welcome</h4>
+                    <div class="insurance">
+                        <img class="insurance-logo" src="./Photos/insurance_logo.png" alt="Logos of insurance">
+                    </div>
                 </div>
             </div>
         </div>
@@ -168,7 +177,7 @@
         <!-- form- booking -->
                 <div class="col-md-6">
                     <form class="enquiry-form">
-                        <fieldset class="field-form">
+                        <fieldset>
                             <legend>Contact Us</legend>
                             <div>
                                 <label for="">First Name</label>
@@ -207,33 +216,37 @@
     </article>
 <!-- Footer -->
     <article class="contact-footer">
-        <section class="get-in-touch"> Get In Touch 
-            <a class="get-in-touch-a" href="">Home</a>
-            <a href="get-in-touch-a">About us</a>
-            <a href="get-in-touch-a">Privacy Statement</a>
-            <a href="get-in-touch-a">Terms & Conditions</a>
-        </section>
-        <section class="contact-us">Contact Us
-            <div>
-            <img class="address" src="https://cdn-icons-png.flaticon.com/128/553/553416.png" >
-            <address>32C Leeds Street, Footscray, VIC, Australia, Victoria</address>
+        <div class="get-in-touch"> 
+            <p class="title">Get In Touch</p> 
+            <a class="link-a" href="">Home</a>
+            <a class="link-a" href="">About us</a>
+            <a class="link-a"href="">Privacy Statement</a>
+            <a class="link-a"href="">Terms & Conditions</a>
+        </div>
+        <div class="contact-us">
+            <p class="title">Contact Us</p>
+            <div class="img-sec">
+                <img class="address" src="https://cdn-icons-png.flaticon.com/128/553/553416.png" >
+                <p>32C Leeds Street, Footscray, VIC, Australia, Victoria</p>
             </div>
-            <div>
+            <div class="img-sec">
                 <img class="phone" src="https://cdn-icons-png.flaticon.com/128/3059/3059498.png">
                 <span>(03) 9687 7933</span>    
             </div>
-            <div>
+            <div class="img-sec">
                 <img class="FB" src="https://cdn-icons-png.flaticon.com/128/6507/6507576.png">
-                <a href="https://www.facebook.com/DcSmileDentalClinic/">Facebook</a>
+                <a class="link-a" href="https://www.facebook.com/DcSmileDentalClinic/">Facebook</a>
             </div>
-        </section>
-        <section class="clinic-hours">Clinic Hours
-            <div>
+        </div>
+        <div class="clinic-hours">
+            <p class="title">Clinic Hours</p>
+            <div class="img-sec">
                 <img class="bk-icon" src="https://cdn-icons-png.flaticon.com/128/9716/9716288.png">
                 <p>Monday- Saturday: 8.30am - 5.30pm</p>
             </div>
-            <button>Book Appointment Now</button>
-        </section>
+            <button class="btn-booking">Book Appointment</button>
+        </div>
+
     <footer>
        <p>Copyright (c) 2023 DC Smile</p>
        <p class="SEO">SEO by Alice Luong</p>
