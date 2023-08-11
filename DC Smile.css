@@ -407,8 +407,13 @@ textarea {
 
 }
 .link-a{
-    color: black;
+    color: #63230e;
     text-decoration: none;
+    background-color: #F7F1EA;
+    left: 10px;
+}
+link-a:hover{
+    background-color: #8692ed;
 }
 .contact-us>div>img{
     padding-right: 10px;
@@ -463,5 +468,4 @@ footer{
 .btn-booking:hover {
     background-color: rgb(250, 137, 44);
 }
-
-
+/* responive page */
