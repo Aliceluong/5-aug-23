@@ -92,6 +92,10 @@ nav{
     color: #71301b;
     font-weight: bold;
 } 
+.general_dentistry>a, .cosmestic_dentistry>a{
+    text-decoration: none;
+    color: #71301b;
+}
 .content{
     text-decoration: none;
     color:#441c15bf;
@@ -101,37 +105,41 @@ nav{
     display: grid;
     grid-template-columns: 1fr,1fr;
 }
+/* hover dropdown content  */
+.content:hover{
+    background: #61250925;
+}
 /* about us */
+.row{
+    position: relative;
+    top:70px;
+}
 .introduction{
     text-align: center;
-    margin-top: 220px;
     color: #63230e;
+    text-align: justify;
 }
 .introduction>h2{
     font-weight: bold;
-}
-.dentist-introduction{
-    text-align: justify;
-}
-.welcome-section{
-    display: flex;
-    width: 1200px;
-    align-items: center;
-    text-align: justify;
+    text-align: center;
 }
 .text-dentist{
     text-align: center;
     font-weight: bold;
-
+    text-align: center;
+}
+.intro-text{
+    text-align: justify;
 }
 .side-pic{
-    width: 370px;
-    height: 550px;
+    width: 350px;
+    height: 450px;
     object-fit: cover;
     position: relative;
     left: 10px;
     box-shadow: 10px 10px 10px rgb(0 0 0 / 37%);
     border-radius: 5px;
+    top: 53px;
 }
 /* our-services */
 .service-intro{
@@ -143,18 +151,12 @@ nav{
     color: #63230e;
     font-weight: bold;
 }
-.our-service{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
-}
 .service1{
     display: flex;
     flex-direction: column;
 }
 .general_dentistry2{
-    top: 55px;
-    border: 1px solid;
+    border: 3px solid rgba(255, 166, 0, 0.605);
     border-radius: 10px;
     line-height: 35px;
     height: 320px;
@@ -168,8 +170,7 @@ nav{
     text-decoration: none;
 }
 .comestic_dentistry2{
-    top: 55px;
-    border: 1px solid;
+    border: 3px solid rgba(255, 166, 0, 0.605);
     border-radius: 10px;
     line-height: 35px;
     height: 320px;
@@ -205,23 +206,36 @@ nav{
 }
 .dental-care{
     width: 70px;
-    left:200px;
-    position: absolute;
+    left:150px;
+    position: relative;
     z-index: 2;
     object-fit: cover;
-    border: 1px solid;
+    border: 2px solid rgba(255, 166, 0, 0.605);
     border-radius: 10px;
     background: #f0f0f0;
+    bottom: -15px;
 }
 .implant{
     width: 70px;
-    left:600px;
-    position: absolute;
+    left: 150px;
+    position: relative;
     z-index: 2;
     object-fit: cover;
-    border: 1px solid;
+    border: 2px solid rgba(255, 166, 0, 0.605);
     border-radius: 10px;
     background: #f0f0f0;
+    bottom: -15px;
+}
+.icon-gallery{
+    width: 70px;
+    left: 150px;
+    position: relative;
+    z-index: 2;
+    object-fit: cover;
+    border: 2px solid rgba(255, 166, 0, 0.605);
+    border-radius: 10px;
+    background: #f0f0f0;
+    bottom: -15px;
 }
 .GD_list>li{
     list-style: none;
@@ -234,13 +248,16 @@ nav{
     list-style: none;
     padding-bottom: 5px;
 }
-.insurance-box{
-    /* border: 1px solid;
-    border-radius: 10px;
-    margin-top: -5px;
-    line-height: 40px; */
-    top: 55px;
-    border: 1px solid;
+/* hover- service content */
+.GD_list>li>a:hover{
+    background: #61250925;
+}
+.CD_list>li>a:hover{
+    background: #61250925;
+}
+/* carousel */
+.carousel-box{
+    border: 3px solid rgba(255, 166, 0, 0.605);
     border-radius: 10px;
     line-height: 35px;
     height: 320px;
@@ -252,26 +269,24 @@ nav{
     align-items: center;
     background:#e4dbd726;
 }
-.icon-insure{
-    width: 70px;
-    left: 150px;
-    position: absolute;
-    z-index: 2;
-    object-fit: cover;
-    border: 1px solid;
-    border-radius: 10px;
-    top: -55px;
-    background: #f0f0f0;
+.carousel-inner{
+    width: 80%;
+    left: 30px;
 }
-.insurance-box>p{
-    margin: 0;
-}
+
 /* insurance */
 .insurance{
+    border: 3px solid rgba(255, 166, 0, 0.605);
+    border-radius: 10px;
+    line-height: 35px;
+    height: 320px;
+    object-fit: cover;
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    gap:5px;
+    position: relative;
+    padding-top: 15px;
+    align-items: center;
+    background:#e4dbd726;
 }
 /* insurance - logo */
 .insurance-logo{
@@ -280,6 +295,25 @@ nav{
     object-fit: contain;
     position: relative;
     top: -20px;
+}
+.medicare-img{
+    border: 3px solid rgba(255, 166, 0, 0.605);
+    border-radius: 10px;
+    line-height: 35px;
+    height: 320px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 15px;
+    align-items: center;
+    background:#e4dbd726;
+}
+.medicare-kid{
+    object-fit: cover;
+    width:300px;
+    top:50px;
+    position: relative;
 }
 /* carousel - form */
 .container{
@@ -292,73 +326,65 @@ nav{
     max-height: fit-content;
     position: relative;
 }
-.carousel-inner{
-    width: 80%;
-}
+
 legend{
     text-align: center;
     font-weight: bold;
-    width: 400px;   
+    width: 400px;
+    top:10px;
+    position: relative;   
 }
-.carousel-form{
-    display:flex;
-}
+
 /* carousel */
 .carousel-item>img{
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
     object-fit: cover;
 }
 /* form */
 .enquiry-form{
     position: relative;
-    top: 10px;
+    background: rgba(255, 255, 255, 0);
+    border-top-width: 0;
+    padding: 25px 25px 26px;
+    object-fit: cover;
+    width:350px;
+    font-size: small;
+    top:-170px;
+    left:15px;
 }
-fieldset {
-    margin: 0;
-    padding: 0;
-    border: 0;
+.form-box{
+    border: 3px solid rgba(255, 166, 0, 0.605);
+    border-radius: 10px;
+    line-height: 35px;
+    height: 320px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 15px;
+    align-items: center;
+    background:#e4dbd726;
 }
-  fieldset:not(:first-child) {
-    margin-top: 26px;
-}
-label {
-    left: 600px;
-    width: 200px;
-}
-
 .value-type{
     position: relative;
-    width: 307px;
-    height: 35px;
-    margin: 3px 0 0;
-}
-.option-part{
-    margin: 3px 0 5px 5px;
-    display: flex;
-
+    width: 150px;
+    height: 20px;
 }
 .label-concern{
-    left: 580px;
-    width: 200px;
+    width: 150px;
 }
 .sel-ser{
     position: relative;
-    width: 200px;
+    width: 150px;
     height: 30px;
-    text-align: center
+    text-align: center;
+    font-weight: small;
 }
 textarea {
-    height: 120px;
-    width: 308px;
-    position: relative;
-    left: 205px;
-    top: -20px;
-}
-.box-concern{
-    display: flex;
-    flex-direction: column;
-    margin: 5px 0 0;
+    left:10px;
+    height: 100px;
+    width: 150px;
 }
 .button-1{
     position: relative;
@@ -366,8 +392,9 @@ textarea {
     height: 30px;
     border-radius: 5px;
     text-align: center;
-    left: 207px;
+    left: 110px;
     background: linear-gradient(to right, #ffb3009e, #ffffff);
+    top:-10px;
 }
 .button-1:hover{
     background-color: rgb(250, 137, 44);
@@ -379,8 +406,10 @@ textarea {
     position: relative;
     gap:30px;
     padding: 0;
-    border: solid 1px orange;
-    top:70px;
+    border: 2px solid rgba(255, 166, 0, 0.605);
+    top: 140px;
+    border-top-width: thin;
+    position: relative;
 }
 .get-in-touch{
     display: flex;
@@ -388,6 +417,8 @@ textarea {
     width: 200px;
     gap: 10px;
     justify-content: center;
+    position: relative;
+    left:15px;
 }
 .contact-us{
     display: flex;
@@ -445,6 +476,8 @@ link-a:hover{
 
 }
 footer{
+    top:140px;
+    position: relative;
     border: solid 1px ;
     display: flex;
     flex-direction: row;
@@ -452,7 +485,7 @@ footer{
     margin: 0px;
     gap: 10px;
     height: 30px;
-    font-size: bold;
+    font-size: small;
 }
 .SEO{
     left:50px
@@ -467,5 +500,29 @@ footer{
 }
 .btn-booking:hover {
     background-color: rgb(250, 137, 44);
+}
+/* Our-Serivce Link Page */
+.ser-page{
+    position: relative;
+    top:120px;
+    text-align: justify;
+}
+.ser-tittle{
+    text-align: center;
+    border: 1px solid;
+    width: 300px;
+    position: relative;
+    left: 385px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ffb3009e, #ffffff);
+    font-weight: bold;
+}
+.ser-content{
+    text-align: center;
+    font-weight: bold;
+}
+.col-lg-6{
+    border: 1px solid rgb(25, 24, 23);
+    border-radius: 5px;
 }
 /* responive page */

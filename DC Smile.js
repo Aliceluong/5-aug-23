@@ -12,7 +12,6 @@ function dropDown(event){
     dropDownServices.style.display = 'grid'; 
     
 }
-
 for (var  i = 0; i < dropdownContents.length; i++) {
     console.log(dropdownContents[i])
     dropdownContents[i].addEventListener('mouseover', dropDown); 
@@ -30,6 +29,7 @@ function dropDownClose(event){
 }
 
 dropdownContent.addEventListener('mouseout',dropDownClose)
+
 // form to be filled 
 let submitButton = document.querySelector('#submit-btn')
 const enquiryForm= document.querySelector('.enquiry-form')
@@ -39,7 +39,7 @@ function formAlert(event){
     let firstName = document.querySelector('#firstname').value
     let lastName = document.querySelector('#lastname').value
     let email = document.querySelector('#email').value
-    let number = document.querySelector('#number').value
+    let phone = document.querySelector('#phone').value
     let boxConcern = document.querySelector('#box-concern-textarea').value
     if (firstName.length < 1){
         alert("Please put your First Name")
@@ -47,7 +47,7 @@ function formAlert(event){
         alert("Please put your Last Name")
     }else if (email.length< 1){
         alert("Please put your Email")
-    }else if(number.length < 1){
+    }else if(phone.length < 1){
         alert("Please put your Phone Number")
     }else if(boxConcern.length < 1){
         alert("Please put your concern")
@@ -55,3 +55,18 @@ function formAlert(event){
         alert("The Form has been successfully submitted")
     }
     }
+    // booking appointment alert
+    let bookingBtn = document.querySelector('#booking-button')
+    function modalAlert(event){
+        event.preventDefault()
+        console.log("hello")
+        alert("Please call the clinic to make appointment")
+    }
+    bookingBtn.addEventListener('click',modalAlert)
+    let bookingBtn2 = document.querySelector('#booking-button2')
+    function modalAlert(event){
+        event.preventDefault()
+        console.log("hello")
+        alert("Please call the clinic to make appointment")
+    }
+    bookingBtn2.addEventListener('click',modalAlert)
